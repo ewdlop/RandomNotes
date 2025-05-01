@@ -1,0 +1,9 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiCameraApp.MainPage"
+             Title="Camera Demo">
+    <VerticalStackLayout Spacing="25" Padding="30">
+        <Button Text="Take Photo" Clicked="OnTakePhotoClicked"/>
+        <Image x:Name="PhotoImage" WidthRequest="300" HeightRequest="300"/>
+    </VerticalStackLayout>
+</ContentPage>
