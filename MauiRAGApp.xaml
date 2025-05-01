@@ -1,0 +1,14 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiRAGApp.MainPage"
+             Title="RAG Chatbot">
+    <VerticalStackLayout Padding="10" Spacing="10">
+        <ScrollView HeightRequest="400">
+            <Label x:Name="ChatHistory" Text="Ask me anything..." 
+                   LineBreakMode="WordWrap" />
+        </ScrollView>
+
+        <Entry x:Name="UserInput" Placeholder="Type your question here" />
+        <Button Text="Send" Clicked="OnSendClicked"/>
+    </VerticalStackLayout>
+</ContentPage>
